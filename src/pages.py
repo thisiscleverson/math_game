@@ -116,11 +116,11 @@ class GamePage(tk.Frame):
       self.math_question.generate_question()
       self.display.change_text(self.math_question.get_question())
       self.draw_button_with_correct_answer()
-      print(self.math_question.get_right_answer())
+      #print(self.math_question.get_right_answer())
 
    def button_active(self, idx:int) -> None:
       values = self.buttons[idx].get_values()
-      print(values)
+      #print(values)
       is_correct = self.math_question.check_answer_is_correct(values)
 
       if is_correct:
